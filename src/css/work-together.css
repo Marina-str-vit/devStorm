@@ -1,7 +1,7 @@
 .footer {
   padding: 20px 0;
 }
-.footer-desc {
+.footer-desc { 
   text-align: center;
 }
 .footer-link {
@@ -19,3 +19,5 @@
   background-color: #41d1ff;
   transition: 200ms ease;
 }
+
+
