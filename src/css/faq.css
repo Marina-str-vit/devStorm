@@ -1,5 +1,5 @@
-.faq-section {
-    padding: 64px 0px;
+.section {
+    padding: 32px 0px;
 }
 
 .container {
@@ -7,30 +7,13 @@
     margin: 0 auto;
 }
 
-/* .faq-wrap {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 40px;
-    width: 343px;
-} */
-
 .faq-list {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 40px;
-    padding: 20px 0;
+    gap: 20px;
 }
-
-/* @media only screen and (min-width: 375px) {
-    .container {
-        min-width: 320px;
-        max-width: 375px;
-    }
-} */
 
 .faq-title {
     font-family: "Inter Tight", sans-serif;
@@ -40,6 +23,13 @@
     letter-spacing: -0.02em;
     color: rgba(250, 250, 250, 0.4);
     margin-bottom: 32px;
+}
+
+.faq-icon {
+    width: 343px;
+    height: 2px;
+    stroke-width: 1px;
+    stroke: rgba(250, 250, 250, 0.2);
 }
 
 .faq-subtitle {
@@ -60,13 +50,17 @@
 }
 
 @media screen and (min-width: 768px) {
-    .faq-section {
-        padding: 96px 0px;
+    .section {
+        padding: 48px 0px;
     }
 
     .container {
         padding: 0 32px;
         margin: 0 auto;
+    }
+
+    .faq-icon {
+        width: 704px;
     }
 
     .faq-subtitle {
@@ -84,11 +78,16 @@
         padding: 0;
     }
 
-    .faq-section {
-        padding: 164px 32px;
+    .section {
+        padding: 82px 32px;
+    }
+
+    .faq-icon {
+        width: 1376px;
     }
 
     .faq-subtitle {
         margin-bottom: 26px;
     }
 }
+
