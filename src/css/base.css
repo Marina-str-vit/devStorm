@@ -15,6 +15,11 @@ body {
   font-style: normal;
   line-height: 1;
   color: #fafafa;
+  letter-spacing: -0.02em;
+}
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .visually-hidden {
