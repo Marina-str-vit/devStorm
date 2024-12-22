@@ -17,10 +17,10 @@ body {
   color: #fafafa;
   letter-spacing: -0.02em;
 }
-.section {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+
+/* .section {
+  padding: 0 32px;
+} */
 
 .visually-hidden {
   position: absolute;
