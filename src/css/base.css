@@ -15,7 +15,12 @@ body {
   font-style: normal;
   line-height: 1;
   color: #fafafa;
+  letter-spacing: -0.02em;
 }
+
+/* .section {
+  padding: 0 32px;
+} */
 
 .visually-hidden {
   position: absolute;
