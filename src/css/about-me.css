@@ -33,3 +33,37 @@
 .img-about-me {
     border-radius: 24px;
 }
+
+/* Tab */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .quote {
+        padding: 0 64px;
+        padding-top: 64px;
+        padding-bottom: 436px;
+        width: 704px;
+        height: 700px;
+    }
+
+    .quote p {
+        font-size: 38px;
+    }
+}
+
+/* Comp */
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+
+    .quote-photo {
+        flex-direction: row;
+    }
+
+    .quote {
+        width: 680px;
+    }
+}
