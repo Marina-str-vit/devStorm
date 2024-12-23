@@ -4,5 +4,5 @@ import Accordion from 'accordion-js';
 
 new Accordion(aboutMeSection, {
     openOnInit: [0],
-    collapse: false
+    collapse: true
 })

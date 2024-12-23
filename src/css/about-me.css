@@ -99,9 +99,10 @@
     visibility: visible
 }
 
-.ac.is-active>.ac-header span {
+.ac.is-active>.ac-header  span{
     rotate: 180deg;
     transform: translate(0, 0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+    margin-left: auto;
 }
 
 .ac-panel p {
@@ -156,8 +157,9 @@
         width: 680px;
     }
 
-    .ac-panel {
-        width: 612px;
+    /* second part (accordion)*/
 
+    .ac-panel {
+        max-width: 612px;
     }
 }
