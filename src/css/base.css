@@ -12,15 +12,12 @@ body {
   background-color: var(--background);
   font-family: 'Inter Tight', serif;
   font-weight: 500;
+  font-size: 16px;
   font-style: normal;
-  line-height: 1;
+  line-height: 1.5;
   color: #fafafa;
   letter-spacing: -0.02em;
 }
-
-/* .section {
-  padding: 0 32px;
-} */
 
 .visually-hidden {
   position: absolute;
