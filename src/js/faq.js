@@ -1,15 +1,16 @@
+
+const faqSection = document.querySelector('.ac-container');
+
 import Accordion from 'accordion-js';
-import 'accordion-js/dist/accordion.min.css';
 
-document.addEventListener('DOMContentLoaded', () => {
- 
-  const accordion = new Accordion('.faq-wrap', {
-    duration: 300, 
-    showMultiple: false, 
-  });
+new Accordion(faqSection, {
+    openOnInit: [0],
+    collapse: true
+})
 
-  console.log('Accordion initialized:', accordion);
-});
+
+
+
 
 
 
