@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"index.js","sources":["../src/js/about-me.js"],"sourcesContent":["const aboutMeSection = document.querySelector('.accordion-container');\n\nimport Accordion from 'accordion-js';\n\nnew Accordion(aboutMeSection, {\n    openOnInit: [0],\n    collapse: true\n})"],"names":["aboutMeSection","Accordion"],"mappings":"svBAAA,MAAMA,EAAiB,SAAS,cAAc,sBAAsB,EAIpE,IAAIC,EAAUD,EAAgB,CAC1B,WAAY,CAAC,CAAC,EACd,SAAU,EACd,CAAC"}
