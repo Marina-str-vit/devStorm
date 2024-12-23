@@ -221,4 +221,47 @@
          width: 32px;
          height: 32px;
      }
- }       
+   
+ }
+
+           /* desktop */
+    
+           @media screen and (min-width: 1440px) {
+               .projects-section {
+                   padding-top: 82px;
+                   padding-bottom: 82px;
+               }
+    
+               .projects-container {
+                   max-width: 1376px;
+               }
+    
+               .projects-title {
+                   font-size: 16px;
+                   line-height: 1.5;
+                   letter-spacing: -0.02em;
+               }
+    
+               .projects-cards {
+                   border-radius: 24px;
+                   display: flex;
+                   flex-direction: row;
+               }
+    
+               .projects-item-white {
+                   width: 688px;
+                   border-radius: 24px 0 0 24px;
+               }
+    
+               .projects-item-black {
+                   width: 688px;
+                   border-radius: 0 24px 24px 0;
+               }
+    
+               .projects-btn {
+                   padding: 18px 50px;
+                   width: 177px;
+                   height: 55px;
+               }
+           }
+
