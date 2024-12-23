@@ -1,10 +1,10 @@
-.quote-photo {
+.about-me-quote-photo {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.quote {
+.about-me-quote {
     padding: 0 32px;
     padding-top: 32px;
     padding-bottom: 272px;
@@ -12,7 +12,7 @@
     border-radius: 24px;
 }
 
-.quote p {
+.about-me-quote p {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 24px;
@@ -34,10 +34,10 @@
     border-radius: 24px;
 }
 
-/* about me (accordion) */
+/* (accordion) */
 .ac {
     margin-top: 8px;
-    padding: 20px 0;
+    padding-top: 20px;
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
     background-color: transparent;
     box-sizing: border-box
@@ -49,10 +49,10 @@
 }
 
 .ac .ac-trigger {
-    font: bold 16px Arial, sans-serif;
     text-align: left;
     width: 100%;
-    padding: 8px 32px 8px 8px; 
+    padding-bottom: 16px; 
+    margin-top: 0;
     display: block;
     cursor: pointer;
     transition: color .25s ease;
@@ -69,14 +69,12 @@
     text-transform: uppercase;
 }
 
-.ac span {
-    content: "+";
+.ac .svg-span {
     text-align: center;
-    -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     position: absolute;
     right: 10px;
-    top: 50%
+    top: 50%;
 }
 
 .ac .ac-trigger:focus {
@@ -84,11 +82,18 @@
 }
 
 .ac .ac-panel {
-    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    padding-bottom: 32px;
+
+    margin-left: auto;
+    margin-right: 0;
+
+
     overflow: hidden;
     transition-property: height, visibility;
     transition-timing-function: ease
-    
 }
 
 .ac.js-enabled .ac-panel {
@@ -99,10 +104,8 @@
     visibility: visible
 }
 
-.ac.is-active>.ac-header  span{
-    rotate: 180deg;
-    transform: translate(0, 0) skewX(0) skewY(0) scaleX(1) scaleY(1);
-    margin-left: auto;
+.ac.is-active>.ac-header .accordion-img{
+    transform: rotate(180deg);
 }
 
 .ac-panel p {
@@ -119,10 +122,15 @@
 .accordion-img {
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 100px;
-    padding: 10px;
+
     width: 40px;
     height: 40px;
 }
+
+.flex-gap {
+    gap: 10px;
+}
+
 
 /* Tab */
 @media screen and (min-width: 768px) {
@@ -130,7 +138,7 @@
         max-width: 768px;
     }
 
-    .quote {
+    .about-me-quote {
         padding: 0 64px;
         padding-top: 64px;
         padding-bottom: 436px;
@@ -138,7 +146,7 @@
         height: 700px;
     }
 
-    .quote p {
+    .about-me-quote p {
         font-size: 38px;
     }
 }
@@ -149,11 +157,11 @@
         max-width: 1440px;
     }
 
-    .quote-photo {
+    .about-me-quote-photo {
         flex-direction: row;
     }
 
-    .quote {
+    .about-me-quote {
         width: 680px;
     }
 

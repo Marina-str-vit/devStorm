@@ -1,8 +1,8 @@
 <section class="container">
   <h2 class="visually-hidden">About me</h2>
 
-  <div class="quote-photo">
-    <div class="quote">
+  <div class="about-me-quote-photo">
+    <div class="about-me-quote">
       <p>
         I work with people all over the world to create impressive and
         <span class="red-span">functional</span>
@@ -11,7 +11,7 @@
       </p>
     </div>
 
-    <div class="photo">
+    <div class="about-me-photo">
       <picture>
         <source
           media="(min-width: 1440px)"
@@ -48,11 +48,16 @@
       <h2 class="ac-header">
         <button type="button" class="ac-trigger">
           About me
-          <span class="group-[.tailwind-active]:rotate-180">
-            <svg class="accordion-img" width="20" height="20">
+          <span class="svg-span">
+            <svg
+              class="accordion-img"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+            >
               <use
                 class="accordion-svg"
-                href="../img/sprite.svg#arrow-up"
+                href="../img/sprite.svg#arrow-down"
               ></use>
             </svg>
           </span>
@@ -89,7 +94,7 @@
       <h2 class="ac-header">
         <button type="button" class="ac-trigger">
           Role
-          <span>
+          <span class="svg-span">
             <svg class="accordion-img" width="20" height="20">
               <use
                 class="accordion-svg"
@@ -100,10 +105,12 @@
         </button>
       </h2>
 
-      <div class="ac-panel">
-        <p>
-          Frontend development<br />HeadlessCMS,Wordpress<br />Blender(enjoy)
-        </p>
+      <div class="ac-panel flex-gap">
+        <p>Frontend development</p>
+
+        <p>HeadlessCMS,Wordpress</p>
+
+        <p>Blender(enjoy)</p>
       </div>
     </li>
 
@@ -111,7 +118,7 @@
       <h2 class="ac-header">
         <button type="button" class="ac-trigger">
           Education
-          <span>
+          <span class="svg-span">
             <svg class="accordion-img" width="20" height="20">
               <use
                 class="accordion-svg"
@@ -122,14 +129,17 @@
         </button>
       </h2>
 
-      <div class="ac-panel">
+      <div class="ac-panel flex-gap">
         <p>
           2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
-          <br />
-          2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
-          New York <br />
-          2020 - 2022 / Advanced Blender Animation Techniques, Udemy
         </p>
+
+        <p>
+          2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+          New York
+        </p>
+
+        <p>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
       </div>
     </li>
   </ul>
