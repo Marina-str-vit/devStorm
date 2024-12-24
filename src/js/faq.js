@@ -16,4 +16,3 @@ new Accordion(faqSection, {
 
 
 
-
