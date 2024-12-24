@@ -246,9 +246,24 @@
   background: none;
 }
 
+.footer-contacts a {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  padding: 10px 12px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  background: none;
+}
+
 .footer-contacts button:active {
   border-color: #fafafa;
-  ;
+}
+
+.footer-contacts a:active {
+  border-color: #fafafa;
 }
 
 .hidden {
