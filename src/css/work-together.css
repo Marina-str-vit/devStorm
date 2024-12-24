@@ -1,13 +1,10 @@
-.footer {
-  background: #1c1d20;
-  background-image: url(../img/work-together/glass-m.jpg);
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: contain;
-}
-
 .footer-container {
   padding: 32px 16px;
+  background: #1c1d20;
+    background-image: url(../img/work-together/glass-m.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
 }
 
 .footer-desc {
