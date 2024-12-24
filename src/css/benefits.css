@@ -112,14 +112,11 @@ h3 {
       @media (min-width: 1440px) {
         .benefits .container {
           display: flex;
+          justify-content: space-between;
         }
     
         .benefits-content {
           margin-right: 0;
-         }
-
-         .benefits-container {
-          margin-left: 496px;
          }
         
         .benefits-header h2 {
@@ -134,8 +131,5 @@ h3 {
 
       .benefit-card{
         max-width: 332px;
-      }
-      .benefits-button-wrapper {
-        margin-left: 496px;
       }
     }
