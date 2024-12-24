@@ -41,5 +41,8 @@
         <symbol id="burger" viewBox="0 0 32 32">
             <path d="M3.5 9.917h21m-21 8.166h21" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </symbol>
+        <symbol id="arrow-right-white" viewBox="0 0 32 32">
+            <path fill="none" style="#fafafa" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M5.333 16h21.333M18.666 8l8 8-8 8"></path>
+        </symbol>
     </defs>
 </svg>
