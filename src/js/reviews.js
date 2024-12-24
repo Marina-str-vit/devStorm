@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         1440: { slidesPerView: 4 },
       },
       navigation: {
-        nextEl: ".section .reviews .swiper-button-next",
-        prevEl: ".section .reviews .swiper-button-prev",
+        nextEl: ".reviews .swiper-button-next",
+        prevEl: ".reviews .swiper-button-prev",
       },
       keyboard: {
         enabled: true,
@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
     });
 
-    const prevBtn = document.querySelector('.reviews-btn-prev');
-    const nextBtn = document.querySelector('.reviews-btn-next');
+    const prevBtn = document.querySelector('.reviews .reviews-btn-prev');
+    const nextBtn = document.querySelector('.reviews .reviews-btn-next');
 
     if (!prevBtn || !nextBtn) {
       console.error('Navigation buttons not found in DOM.');
@@ -98,8 +98,8 @@ function renderReviews(reviews) {
 
 
 function updateButtonState(swiper) {
-  const prevBtn = document.querySelector('.reviews-btn-prev');
-  const nextBtn = document.querySelector('.reviews-btn-next');
+  const prevBtn = document.querySelector('.reviews .reviews-btn-prev');
+  const nextBtn = document.querySelector('.reviews .reviews-btn-next');
 
   if (!prevBtn || !nextBtn) {
     console.error('Navigation buttons not found in DOM.');
