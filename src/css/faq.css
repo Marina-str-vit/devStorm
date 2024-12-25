@@ -101,7 +101,7 @@
 
 
 @media screen and (min-width: 768px) {
-    .section {
+    .faq {
         padding: 48px 0px;
     }
 
@@ -125,7 +125,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .section {
+    .faq {
         padding: 82px 0px;
     }
 
