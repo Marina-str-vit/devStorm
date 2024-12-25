@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       touchRatio: 1,
       loop: false,
+      centeredSlides: false, 
       on: {
         init: function () {
           updateButtonState(this);
