@@ -23,7 +23,6 @@
     max-height: 302px;
     display: flex;
     margin-bottom: 32px;
-    margin: 0 auto;
 }
 
 .reviews-title {
@@ -155,10 +154,6 @@
 
     .reviews-list {
         max-width: 332px;
-    }
-
-    .reviews-gallery {
-        gap: 14px;
     }
 }
 
