@@ -7,6 +7,8 @@
     }
 }
 
+
+
 .section .reviews .swiper-wrapper {
     height: 302px;
     margin: 0 auto;
@@ -158,4 +160,29 @@
     .reviews-gallery {
         gap: 14px;
     }
+}
+
+/* Прокрутка для великого тексту */
+
+.reviews-text {
+    max-height: 144px;
+    overflow: auto;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    scrollbar-width: thin;
+    padding-right: 16px;
+    scrollbar-color: rgba(250, 250, 250, 0.6) transparent;
+}
+
+.reviews-text::-webkit-scrollbar {
+    width: 8px;
+}
+
+.reviews-text::-webkit-scrollbar-thumb {
+    background-color: rgba(250, 250, 250, 0.6);
+    border-radius: 4px;
+}
+
+.reviews-text::-webkit-scrollbar-track {
+    background: transparent;
 }
