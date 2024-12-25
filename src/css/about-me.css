@@ -35,7 +35,7 @@
 }
 
 /* (accordion) */
-.ac {
+.about-me-ac {
     margin-top: 8px;
     padding-top: 20px;
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
@@ -43,15 +43,18 @@
     box-sizing: border-box
 }
 
-.ac .ac-header {
+.about-me-ac .ac-header {
     margin: 0;
     padding: 0
 }
 
-.ac .ac-trigger {
+.about-me-ac .about-me-trigger {
     text-align: left;
     width: 100%;
-    padding-bottom: 16px; 
+    padding-bottom: 16px;
+    padding-bottom: 16px;
+    padding-right: 50px;
+    padding-inline-start: 0px;
     margin-top: 0;
     display: block;
     cursor: pointer;
@@ -69,7 +72,7 @@
     text-transform: uppercase;
 }
 
-.ac .svg-span {
+.about-me-ac .svg-span {
     text-align: center;
     transform: translate(0, -50%);
     position: absolute;
@@ -77,13 +80,22 @@
     top: 50%;
 }
 
-.ac .ac-trigger:focus {
+.accordion-img {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 50px;
+    width: 34px;
+    height: 34px;
+    display: block;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.about-me-ac .about-me-trigger:focus {
     color: #8a8a8a
 }
 
-.ac .ac-panel {
-    display: flex;
-    flex-direction: column;
+.about-me-ac .about-me-panel {
     padding-top: 8px;
     padding-bottom: 32px;
 
@@ -96,19 +108,24 @@
     transition-timing-function: ease
 }
 
-.ac.js-enabled .ac-panel {
+.panel-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-ac.js-enabled .about-me-panel {
     visibility: hidden
 }
 
-.ac.is-active .ac-panel {
+.about-me-ac.is-active .about-me-panel {
     visibility: visible
 }
 
-.ac.is-active>.ac-header .accordion-img{
+.about-me-ac.is-active>.ac-header .accordion-img{
     transform: rotate(180deg);
 }
 
-.ac-panel p {
+.about-me-panel p {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -119,27 +136,23 @@
     margin-top: 32px;
 }
 
-.accordion-img {
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 100px;
-
-    width: 40px;
-    height: 40px;
-}
-
 .flex-gap {
     gap: 10px;
 }
+
+/* third part (swiper)*/
 
 .swiper {
     width: 343px;
     height: 130px;
     margin-top: 32px;
     padding: 0 20px;
+    display: flex;
+    gap: 55px;
 }
 
 .swiper-wrapper {
-    width: 260px;
+    max-width: 260px;
     display: flex;
 }
 
@@ -170,11 +183,15 @@
     border: none;
 }
 
-.about-me-swiper-svg {
-    stroke: #3B3B3B;
-    stroke-width: 2px;
+.swiper-button-next svg {
+    width: 28px;
+    height: 28px;
+    fill: none;
 }
 
+.swiper-button-next use {
+    stroke: #3B3B3B;
+}
 
 
 /* Tab */

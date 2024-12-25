@@ -10,18 +10,19 @@ import Accordion from 'accordion-js';
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
 
 
 new Accordion(aboutMeSection, {
     openOnInit: [0],
-    collapse: true
+    collapse: true,
+    elementClass: 'about-me-ac',
+    triggerClass: 'about-me-trigger',
+    panelClass: 'about-me-panel',
 })
 
 const swiper = new Swiper(swiperSection, {
     navigation: {
-    nextEl: nextBtn,
-    prevEl: prevBtn,
+    nextEl: nextBtn
     },
 
     breakpoints: {
