@@ -160,7 +160,7 @@
 
     .faq-list {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 688px 688px;
         grid-template-rows: repeat(3, auto);
     }
 
