@@ -1,15 +1,15 @@
 const aboutMeSection = document.querySelector('.accordion-container');
 const swiperSection = document.querySelector('.swiper');
-const nextBtn = document.querySelector('.swiper-button-next');
-const prevBtn = document.querySelector('.swiper-button-prev');
-
+const nextBtn = document.querySelector('.about-me .swiper-button-next');
+const prevBtn = document.querySelector('.btn-prev');
+const swiperItem = document.querySelector('.li-swiper');
 /* For part 2 */
 import Accordion from 'accordion-js';
 
 /* For part 3 */
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/navigation';
 
 
 new Accordion(aboutMeSection, {
@@ -21,13 +21,15 @@ new Accordion(aboutMeSection, {
 })
 
 const swiper = new Swiper(swiperSection, {
+    module: [Navigation],
+    loop: true,
     navigation: {
-    nextEl: nextBtn
+        nextEl: ".about-me .swiper-button-next"
     },
 
     breakpoints: {
     // when window width is >= 320px
-    320: {
+    375: {
         slidesPerView: 2
     },
     // when window width is >= 640px
@@ -38,6 +40,10 @@ const swiper = new Swiper(swiperSection, {
     1440: {
         slidesPerView: 6
     }
+    },
 
-    }
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+    },
 });
