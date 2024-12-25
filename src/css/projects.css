@@ -20,10 +20,9 @@
     line-height: 1.5;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: #757575;
-    /* text-grey-webs */
-    padding-bottom: 32px;
-    padding-top: 5px;
+    text-align: left;
+        color: rgba(250, 250, 250, 0.4);
+        margin-bottom: 32px;
 }
 
 .projects-cards {
@@ -117,47 +116,41 @@
 
 .projects-swiper-button-container.swiper-button-container {
     display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        gap: 16px;
-        width: 156px;
-        height: 68px;
-        margin: 0 auto;
-        margin-top: 32px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+    width: 156px;
+    height: 68px;
+    margin: 0 auto;
+    margin-top: 32px;
 }
 
-.projects-btn-slider {
-    position: static !important;
-        top: auto !important;
-        width: 68px !important;
-        height: 68px !important;
-        padding: 14px;
-        text-align: center;
-        align-items: center;
-        margin: 0 auto;
-        border: 1px solid rgba(250, 250, 250, 0.6);
-        border-radius: 50%;
-        background-color: transparent;
-        margin-top: 0 !important;
-    
-
-}
-
-
-.projects-button-slider-prev {
-    border: 1px solid #f5f5f5;
-    /* modal-background */
-}
-
+.projects-btn-slider,
+.projects-button-slider-prev,
 .projects-button-slider-next {
-    border: 1px solid #ffffff;
-    /* main-text */
+    position: static !important;
+    top: auto !important;
+    width: 68px !important;
+    height: 68px !important;
+    padding: 14px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid rgba(250, 250, 250, 0.6);
+    border-radius: 50%;
+    background-color: transparent;
+    margin-top: 0 !important;
 }
 
-
-.projects-button-slider-prev {
+.projects-button-slider-prev .projects-btn-slider-icon {
     transform: rotate(-180deg);
+}
+
+.projects-btn-slider-icon {
+    stroke: rgba(250, 250, 250, 0.6);
+    width: 32px;
+    height: 32px;
 }
 
 .projects-block-slider.swiper-container {
@@ -228,8 +221,9 @@
     }
 
     .projects-btn-slider-icon {
-        width: 32px;
-        height: 32px;
+    stroke: rgba(250, 250, 250, 0.6);
+        width: 32px !important;
+        height: 32px !important;
     }
 
 }
