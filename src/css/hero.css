@@ -38,6 +38,7 @@ color: #fafafa;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: end;
     height: 37px;
     margin-bottom: 32px;
     max-width: 100%;
@@ -75,7 +76,7 @@ color: #fafafa;
 border: 1px solid rgba(250, 250, 250, 0.2);
 border-radius: 60px;
 padding: 10px;
-margin-right: 17px;
+/*margin-right: 17px;*/
 
 font-size: 14px;
 letter-spacing: -0.02em;
@@ -122,10 +123,9 @@ border: 1px solid #fafafa;
 
     .hero-social-media {
     display: flex;
+    justify-content: end;
     height: 55px;
-    margin-right: 32px;
-    margin-bottom: 32px;
-    margin-left: 263px;
+    
     }
 
     .hero-social-media-list {
@@ -178,7 +178,8 @@ border: 1px solid #fafafa;
         }
 
         .hero-social-media {
-            margin-left: 935px;
+            display: flex;
+            justify-content: end;
         }
 
         .hero-social-media-list {
