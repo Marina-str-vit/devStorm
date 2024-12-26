@@ -58,19 +58,14 @@ const swiperAbout = new Swiper(swiperSection, {
     },
 
     slideToClickedSlide: true,
-    nested: true
+    /* nested: true */
 });
 
-nextBtn.addEventListener("click", (evt) => {
-    evt.preventDefault();
-    if (evt.key === "Tab") {
-        swiperAbout.slidePrev();
-    } else {
-        swiperAbout.slideNext();
-    }
+nextBtn.addEventListener('click', (evt) => {
+    swiperAbout.slideNext();
 });
 
-swiperSection.addEventListener("keydown", (evt) => {
+swiperSection.addEventListener('keydown', (evt) => {
     evt.preventDefault();
     if (evt.key === "Tab") {
         swiperAbout.slideNext();
