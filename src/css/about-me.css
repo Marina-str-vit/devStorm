@@ -147,18 +147,19 @@
     margin-top: 32px;
     margin-bottom: 32px;
     max-width: 312px;
+    position: relative;
 
 
     .ul-swiper {
         display: flex;
         flex-direction: row;
-        max-width: 260px;
-        position: absolute;
-        left: 0;
+        position: relative;
+        max-width: 100%;
     }
 
     .li-swiper {
         width: 130px;
+        height: 130px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -170,10 +171,16 @@
         letter-spacing: -0.02em;
     }
 
+    .li-swiper:hover {
+        background-color: var(--red),
+    }
+
 }
 
-.ul-swiper {
-    width: 260px;
+.btn-next {
+    position: absolute;
+    top: 50%;
+    right: -72px;
 }
 
 /* Tab */
@@ -237,9 +244,5 @@
     /* third part (swiper) */
     .swiper-div {
         max-width: 1200px;
-    }
-
-    .li-swiper {
-        width: 130px;
     }
 }
