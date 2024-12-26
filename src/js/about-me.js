@@ -1,8 +1,6 @@
 const aboutMeSection = document.querySelector('.accordion-container');
 const swiperSection = document.querySelector('.swiper');
 const nextBtn = document.querySelector('.about-me .swiper-button-next');
-const prevBtn = document.querySelector('.btn-prev');
-const swiperItem = document.querySelector('.li-swiper');
 /* For part 2 */
 import Accordion from 'accordion-js';
 
