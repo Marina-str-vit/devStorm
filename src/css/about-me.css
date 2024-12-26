@@ -175,6 +175,10 @@
         background-color: var(--red),
     }
 
+    .red-swiper {
+        background-color: var(--red);
+    }
+
 }
 
 .btn-next {
