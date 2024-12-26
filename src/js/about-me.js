@@ -61,7 +61,7 @@ const swiperAbout = new Swiper(swiperSection, {
     /* nested: true */
 });
 
-nextBtn.addEventListener('click', (evt) => {
+nextBtn.addEventListener('click', () => {
     swiperAbout.slideNext();
 });
 
