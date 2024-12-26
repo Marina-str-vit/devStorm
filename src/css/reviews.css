@@ -141,10 +141,6 @@
         max-width: 344px;
         max-height: 302px;
     }
-
-    .reviews-gallery {
-        gap: 16px;
-    }
 }
 
 @media (min-width: 1440px) {
