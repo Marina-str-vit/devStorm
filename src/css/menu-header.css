@@ -24,7 +24,7 @@ header {
     padding-top: 300px;
     transition: transform 0.3s ease-in-out;
     display: none;
-    background-image: url(../img/hero-img/hero-mob-1x.jpg);
+    background-image: url(./img/hero-img/hero-mob-1x.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
