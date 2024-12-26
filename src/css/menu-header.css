@@ -157,7 +157,7 @@ header {
     }
 }
 
-/* Мобільна версія (375px - 767px) */
+
 @media (max-width: 767px) {
     header {
         justify-content: space-between;
