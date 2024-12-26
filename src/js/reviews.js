@@ -11,8 +11,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     const swiper = new Swiper('.swiper-reviews', {
       breakpoints: {
         375: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1440: { slidesPerView: 4 },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
+        1440: {
+          slidesPerView: 4,
+          spaceBetween: 16, },
       },
       navigation: {
         nextEl: ".reviews .swiper-button-next",
