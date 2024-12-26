@@ -1,6 +1,6 @@
 const aboutMeSection = document.querySelector('.accordion-container');
-const swiperSection = document.querySelector('.swiper');
-const nextBtn = document.querySelector('.about-me .swiper-button-next');
+const swiperSection = document.querySelector('.swiper-div');
+const nextBtn = document.querySelector('.next-swiper');
 /* For part 2 */
 import Accordion from 'accordion-js';
 
@@ -8,6 +8,8 @@ import Accordion from 'accordion-js';
 import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { Keyboard } from 'swiper/modules';
+import { Mousewheel } from 'swiper/modules';
 
 
 new Accordion(aboutMeSection, {
@@ -18,19 +20,21 @@ new Accordion(aboutMeSection, {
     panelClass: 'about-me-panel',
 })
 
-const swiper = new Swiper(swiperSection, {
-    module: [Navigation],
-    loop: true,
-    navigation: {
-        nextEl: ".about-me .swiper-button-next"
-    },
+const swiperAbout = new Swiper(swiperSection, {
+    wrapperClass: 'wrapper-ul-swiper',
+    slideClass: 'slide-li-swiper',
+    slideActiveClass: 'slide-li-active-about-me',
 
+    module: [Navigation, Keyboard, Mousewheel],
+    loop: true,
+    speed: 800,
+
+    spaceBetween: 0,
     breakpoints: {
-    // when window width is >= 320px
-    375: {
+    320: {
         slidesPerView: 2
     },
-    // when window width is >= 640px
+        
     768: {
         slidesPerView: 3
     },
@@ -40,8 +44,38 @@ const swiper = new Swiper(swiperSection, {
     }
     },
 
+    navigation: {
+        nextEl: '.next-swiper'
+    },
+
     keyboard: {
         enabled: true,
-        onlyInViewport: true,
+        onlyInViewport: false,
     },
+
+    mousewheel: {
+    invert: true,
+    },
+
+    slideToClickedSlide: true,
+    nested: true
 });
+
+nextBtn.addEventListener("click", (evt) => {
+    evt.preventDefault();
+    if (evt.key === "Tab") {
+        swiperAbout.slidePrev();
+    } else {
+        swiperAbout.slideNext();
+    }
+});
+
+swiperSection.addEventListener("keydown", (evt) => {
+    evt.preventDefault();
+    if (evt.key === "Tab") {
+        swiperAbout.slideNext();
+    } else {
+        swiperAbout.slidePrev();
+    }
+})
+
