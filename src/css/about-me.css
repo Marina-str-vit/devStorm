@@ -89,10 +89,23 @@
     margin: 0 auto;
     padding-left: 10px;
     padding-top: 10px;
+    transition: background-color 150ms linear;
+}
+
+.about-me-trigger:hover .accordion-img{
+    background-color: var(--red);
+}
+
+.about-me-trigger:focus .accordion-img {
+    border-color: var(--red);
+}
+
+.about-me-ac .about-me-trigger:hover {
+    color: var(--red);
 }
 
 .about-me-ac .about-me-trigger:focus {
-    color: #8a8a8a
+    color: var(--red)
 }
 
 .about-me-ac .about-me-panel {
@@ -104,7 +117,7 @@
 
 
     overflow: hidden;
-    transition-property: height, visibility;
+    transition-property: height;
     transition-timing-function: ease
 }
 
