@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-top: 32px;
 }
 
 .about-me-quote {
@@ -35,8 +36,11 @@
 }
 
 /* (accordion) */
+.about-me-margin {
+    margin-top: 32px;
+}
+
 .about-me-ac {
-    margin-top: 8px;
     padding-top: 20px;
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
     background-color: transparent;
@@ -83,8 +87,8 @@
 .accordion-img {
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 50px;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     display: block;
     margin: 0 auto;
     padding-left: 10px;
@@ -252,6 +256,19 @@
         font-size: 38px;
     }
 
+    .about-me-ac {
+        padding-top: 32px;
+    }
+
+    .about-me-margin {
+        margin-top: 32px;
+    }
+
+    .accordion-img {
+        width: 40px;
+        height: 40px;
+    }
+
     /* third part (swiper) */
 
     .swiper-div {
@@ -292,6 +309,7 @@
 
     .about-me-quote-photo {
         flex-direction: row;
+        margin-top: 14px;
     }
 
     .about-me-quote {
@@ -307,6 +325,15 @@
     .panel-items {
         padding-left: 728px;
         padding-right: 43px;
+    }
+
+    .accordion-svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .about-me-margin {
+        margin-top: 64px;
     }
 
 
