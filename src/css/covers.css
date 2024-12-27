@@ -7,7 +7,7 @@
 
 .covers-section {
   background-image:
-  url(/img/cover/src/img/cover/dark-background-element-desctop-1x.jpg);
+  url(/img/cover/dark-bakground-desctop-1x.jpg);
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -15,7 +15,7 @@
 (min-resolution: 192dpi){
   .covers-section {
   background-image:
-  url(/img/cover/dark-background-element-desctop-2x.jpg);
+  url(/img/cover/dark-background-desctop-2x.jpg);
 }
   }
  
