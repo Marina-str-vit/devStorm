@@ -21,7 +21,6 @@
 
 .hero-box {
     margin-top: 169px;
-    padding-bottom: 212px;
     margin-left: 16px;
     min-width: 250px;
     min-height: 343px;
@@ -173,6 +172,7 @@
 
             background-image:
                 url(/img/hero-img/hero-desktop-1x.jpg);
+
         }
 
         .hero-box {
