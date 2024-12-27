@@ -246,6 +246,12 @@
   background: none;
 }
 
+.footer-contacts button:hover,
+.footer-contacts button:active,
+.footer-contacts button:focus{
+  border: 1px solid #fafafa;
+}
+
 .footer-contacts a {
   font-family: "Inter Tight", sans-serif;
   font-weight: 500;
@@ -258,13 +264,13 @@
   background: none;
 }
 
-.footer-contacts button:active {
-  border-color: #fafafa;
+.footer-link:hover,
+.footer-link:active,
+.footer-link:focus{
+  border: 1px solid #fafafa;
 }
 
-.footer-contacts a:active {
-  border-color: #fafafa;
-}
+
 
 .hidden {
   display: none;
