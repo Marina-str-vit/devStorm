@@ -4,9 +4,10 @@
 
 header {
     display: flex;
-    gap: 487px;
+    justify-content: space-between;
     position: absolute;
     max-width: 1376px;
+    width: 100%;
     height: 80px;
 }
 
@@ -26,7 +27,7 @@ header {
     padding-top: 300px;
     transition: transform 0.3s ease-in-out;
     display: none;
-    background-image: url(./img/hero-img/hero-mob-1x.jpg);
+    background-image: url(/img/hero-img/hero-mob-1x.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
