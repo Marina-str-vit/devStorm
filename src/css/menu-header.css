@@ -1,12 +1,4 @@
-<<<<<<< Updated upstream
-#hero {
-    padding: 32px 0;
-}
-
-header {
-=======
 .menu-header {
->>>>>>> Stashed changes
     display: flex;
     justify-content: space-between;
     position: absolute;

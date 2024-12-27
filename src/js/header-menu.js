@@ -1,6 +1,3 @@
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const burgerButton = document.querySelector('.burger-button');
     const mobileMenu = document.querySelector('.mobile-menu');
