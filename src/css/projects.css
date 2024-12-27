@@ -41,7 +41,8 @@
     justify-content: flex-start;
     flex-direction: row;
     gap: 6px;
-    margin: 0 auto;
+    margin-left: 32px;
+    margin-top: 32px;
     padding-top: 32px;
     margin-bottom: 96px;
     box-sizing: border-box;
@@ -68,8 +69,7 @@
     letter-spacing: -0.03em;
     color: #000000;
     /* background */
-    margin-left: 20px;
-    margin-bottom: 30px;
+   margin: 0 0 32px 32px;
     max-width: 279px;
 }
 
@@ -86,7 +86,7 @@
     font-size: 16px;
     letter-spacing: -0.02em;
     color: #ffffff;
-    margin: 0 auto;
+    margin: 0 0 32px 32px;
 }
 
 .projects-btn:hover,
@@ -178,20 +178,18 @@
 
     .projects-content-block {
         max-width: 322px;
-        margin: 0;
-        margin-bottom: 160px;
-        margin-left: 50px;
+        margin: 0 0 160px 64px;
     }
 
     .projects-text {
-        margin-left: 50px;
+        margin: 0 0 64px 64px;
         font-size: 44px;
         line-height: 1;
         max-width: 494px;
     }
 
     .projects-btn {
-        margin-left: 50px;
+        margin: 0 0 64px 64px;
         margin-bottom: 80px;
     }
 
