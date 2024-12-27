@@ -1,8 +1,12 @@
+<<<<<<< Updated upstream
 #hero {
     padding: 32px 0;
 }
 
 header {
+=======
+.menu-header {
+>>>>>>> Stashed changes
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -143,7 +147,7 @@ header {
 }
 
 @media (max-width: 1439px) and (min-width: 768px) {
-    header {
+    .menu-header {
         max-width: 704px;
         height: 80px;
         gap: 151px;
@@ -165,7 +169,7 @@ header {
 
 /* Мобільна версія (375px - 767px) */
 @media (max-width: 767px) {
-    header {
+    .menu-header {
         justify-content: space-between;
         align-items: center;
         gap: 16px;
