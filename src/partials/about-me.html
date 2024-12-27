@@ -17,26 +17,26 @@
           <source
             media="(min-width: 1440px)"
             srcset="
-              ../img/about-me/img-comp-1x.jpg 1x,
-              ../img/about-me/img-comp-2x.jpg 2x
+              ./img/about-me/img-comp-1x.jpg 1x,
+              ./img/about-me/img-comp-2x.jpg 2x
             "
           />
           <source
             media="(min-width: 768px)"
             srcset="
-              ../img/about-me/img-tab-1x.jpg 1x,
-              ../img/about-me/img-tab-2x.jpg 2x
+              ./img/about-me/img-tab-1x.jpg 1x,
+              ./img/about-me/img-tab-2x.jpg 2x
             "
           />
           <source
             media="(max-width: 767px)"
             srcset="
-              ../img/about-me/img-mob-1x.jpg 1x,
-              ../img/about-me/img-mob-2x.jpg 2x
+              ./img/about-me/img-mob-1x.jpg 1x,
+              ./img/about-me/img-mob-2x.jpg 2x
             "
           />
           <img
-            src="../img/about-me/img.jpg"
+            src="./img/about-me/img.jpg"
             alt="A man with light brown hair and a beard"
             class="img-about-me"
           />
@@ -44,7 +44,7 @@
       </div>
     </div>
 
-    <ul class="accordion-container">
+    <ul class="accordion-container about-me-margin">
       <li class="about-me-ac">
         <h2 class="ac-header">
           <button type="button" class="about-me-trigger">
@@ -147,22 +147,52 @@
       </li>
     </ul>
 
-    <div class="swiper swiper-div">
-      <ul class="swiper-wrapper ul-swiper">
-        <li class="swiper-slide li-swiper">HTML/CSS</li>
-        <li class="swiper-slide li-swiper">JavaScript</li>
-        <li class="swiper-slide li-swiper">React</li>
-        <li class="swiper-slide li-swiper">Node.js</li>
-        <li class="swiper-slide li-swiper">React Native</li>
-        <li class="swiper-slide li-swiper">Soft skills</li>
-      </ul>
-
-      <div class="swiper-button-next btn-next">
-        <svg class="next-icon-svg" width="40" height="40">
-          <use href="../img/sprite.svg#arrow-right"></use>
-        </svg>
+    <div class="about-me-swiper-container">
+      <div class="swiper-div">
+        <ul class="wrapper-ul-swiper">
+          <li class="slide-li-swiper">
+            <div class="slide-li-swiper-text">HTML/CSS</div>
+          </li>
+          <li class="slide-li-swiper">
+            <div class="slide-li-swiper-text">JavaScript</div>
+          </li>
+          <li class="slide-li-swiper">
+            <div class="slide-li-swiper-text">React</div>
+          </li>
+          <li class="slide-li-swiper">
+            <div class="slide-li-swiper-text">Node.js</div>
+          </li>
+          <li class="slide-li-swiper">
+            <div class="slide-li-swiper-text">React Native</div>
+          </li>
+          <li class="slide-li-swiper">
+            <div class="slide-li-swiper-text">Soft skills</div>
+          </li>
+          <li class="slide-li-swiper">
+            <div class="slide-li-swiper-text">HTML/CSS</div>
+          </li>
+          <li class="slide-li-swiper">
+            <div class="slide-li-swiper-text">JavaScript</div>
+          </li>
+          <li class="slide-li-swiper">
+            <div class="slide-li-swiper-text">React</div>
+          </li>
+          <li class="slide-li-swiper">
+            <div class="slide-li-swiper-text">Node.js</div>
+          </li>
+          <li class="slide-li-swiper">
+            <div class="slide-li-swiper-text">React Native</div>
+          </li>
+          <li class="slide-li-swiper">
+            <div class="slide-li-swiper-text">Soft skills</div>
+          </li>
+        </ul>
       </div>
-      <div class="btn-prev"></div>
+      <button class="next-swiper">
+        <svg class="next-icon-svg" width="40" height="40">
+          <use href="./img/sprite.svg#arrow-right" class="icon-about-me"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>

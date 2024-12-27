@@ -159,7 +159,7 @@
     }
 }
 
-/* Мобільна версія (375px - 767px) */
+
 @media (max-width: 767px) {
     .menu-header {
         justify-content: space-between;
