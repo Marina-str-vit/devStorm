@@ -38,7 +38,7 @@ color: #fafafa;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     height: 37px;
     margin-bottom: 32px;
     max-width: 100%;
