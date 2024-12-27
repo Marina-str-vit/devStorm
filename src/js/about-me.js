@@ -10,6 +10,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Keyboard } from 'swiper/modules';
 import { Mousewheel } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 
 new Accordion(aboutMeSection, {
