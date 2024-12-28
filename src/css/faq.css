@@ -32,8 +32,13 @@
     text-transform: none;
 }
 
-.ac .ac-trigger:focus {
+/* .ac .ac-trigger:focus {
     color: #fafafa;
+} */
+
+.ac .ac-trigger:hover,
+.ac .ac-trigger:focus {
+    color: #ED3B44;
 }
 
 .ac .svg-span {
@@ -41,7 +46,6 @@
     right: 0px;
     top: 0px;
 }
-
 
 .faq-icon-arrow {
     display: block;
@@ -52,8 +56,17 @@
     height: 34px;
     padding-left: 10px;
     padding-top: 10px;
+    transition: background-color 150ms linear;
 }
 
+.ac-trigger:hover .faq-icon-arrow,
+.ac-trigger:focus .faq-icon-arrow {
+    background-color: #ED3B44;
+}
+
+.ac-trigger:focus .faq-icon-arrow {
+    border-color: #ED3B44;
+}
 
 .ac.js-enabled .faq-text {
     visibility: hidden;
