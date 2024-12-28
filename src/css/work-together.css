@@ -253,6 +253,11 @@
   color: #fafafa;
   border: none;
 }
+button.footer-button:hover,
+button.footer-button:active,
+button.footer-button:focus {
+background-color: #E0373F;
+}
 
 .footer-button:active {
   background-color: #e0373f;

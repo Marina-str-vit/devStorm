@@ -138,6 +138,12 @@
     text-align: left;
 }
 
+a.cta-button.btn-menu:hover,
+a.cta-button.btn-menu:focus,
+a.cta-button.btn-menu:active {
+    background-color: #E0373F;
+}
+
 @media (max-width: 1439px) and (min-width: 768px) {
     .menu-header {
         max-width: 704px;
