@@ -1,0 +1,350 @@
+.about-me-quote-photo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.about-me-quote {
+    padding: 0 32px;
+    padding-top: 32px;
+    padding-bottom: 272px;
+    background-color: #242527;
+    border-radius: 24px;
+}
+
+.about-me-quote p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--main-text);
+}
+
+.red-span {
+    color: var(--red);
+}
+
+.grey-span {
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.img-about-me {
+    border-radius: 24px;
+}
+
+/* (accordion) */
+.about-me-margin {
+    margin-top: 32px;
+}
+
+.about-me-ac {
+    padding-top: 20px;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    background-color: transparent;
+    box-sizing: border-box
+}
+
+.about-me-ac .ac-header {
+    margin: 0;
+    padding: 0
+}
+
+.about-me-ac .about-me-trigger {
+    text-align: left;
+    width: 100%;
+    padding-bottom: 16px;
+    padding-bottom: 16px;
+    padding-right: 50px;
+    padding-inline-start: 0px;
+    margin-top: 0;
+    display: block;
+    cursor: pointer;
+    transition: color .25s ease;
+    position: relative;
+    text-decoration: none;
+
+    background-color: transparent;
+    color: rgba(250, 250, 250, 0.4);
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.about-me-ac .svg-span {
+    text-align: center;
+    transform: translate(0, -50%);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+
+.accordion-img {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 50px;
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-top: 10px;
+    transition: background-color 150ms linear;
+}
+
+.about-me-trigger:hover .accordion-img{
+    background-color: var(--red);
+}
+
+.about-me-trigger:focus .accordion-img {
+    border-color: var(--red);
+}
+
+.about-me-ac .about-me-trigger:hover {
+    color: var(--red);
+}
+
+.about-me-ac .about-me-trigger:focus {
+    color: var(--red)
+}
+
+.about-me-ac .about-me-panel {
+    padding-top: 8px;
+    padding-bottom: 32px;
+
+    margin-left: auto;
+    margin-right: 0;
+
+
+    overflow: hidden;
+    transition-property: height;
+    transition-timing-function: ease
+}
+
+.panel-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-ac.js-enabled .about-me-panel {
+    visibility: hidden
+}
+
+.about-me-ac.is-active .about-me-panel {
+    visibility: visible
+}
+
+.about-me-ac.is-active>.ac-header .accordion-img{
+    transform: rotate(180deg);
+}
+
+.about-me-panel p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+}
+
+.second-part-about-me {
+    margin-top: 32px;
+}
+
+.flex-gap {
+    gap: 10px;
+}
+
+/* third part (swiper)*/
+
+.about-me-swiper-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.swiper-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 260px;
+    min-width: 0;
+
+}
+
+.wrapper-ul-swiper {
+    display: flex;
+    min-width: 0;
+    width: 260px;
+}
+
+.slide-li-swiper {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    display: block;
+}
+
+.slide-li-swiper-text {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    border-radius: 100px;
+    border: 1px solid rgba(250, 250, 250, 0.20);
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-li-active-about-me {
+    background-color: var(--red);
+}
+
+
+.next-swiper {
+    background-color: transparent;
+    border-radius: 50%;
+    border-color: transparent;
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms linear;
+}
+
+.next-swiper:hover {
+    background-color: var(--red);
+}
+
+.next-icon-svg {
+    width: 28px;
+    height: 28px;
+    fill: none;
+    stroke: #3B3B3B;
+
+    transition: stroke 250ms linear;
+}
+
+.next-swiper:hover .next-icon-svg {
+    stroke: var(--background);
+}
+
+/* Tab */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .about-me-quote {
+        padding: 0 64px;
+        padding-top: 64px;
+        padding-bottom: 436px;
+        width: 704px;
+        height: 700px;
+    }
+
+    .about-me-quote p {
+        font-size: 38px;
+    }
+
+    .about-me-ac {
+        padding-top: 32px;
+    }
+
+    .about-me-margin {
+        margin-top: 32px;
+    }
+
+    .accordion-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* third part (swiper) */
+
+    .swiper-div {
+        width: 600px;
+    }
+
+    .slide-li-swiper-text {
+        height: 200px;
+        width: 200px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .slide-li-swiper-text {
+        height: 200px;
+    }
+
+    .next-swiper {
+        width: 42px;
+        height: 42px;
+    }
+
+    .next-icon-svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .about-me-swiper-container {
+        margin-top: 64px;
+    }
+}
+
+/* Comp */
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+
+    .about-me-quote-photo {
+        flex-direction: row;
+    }
+
+    .about-me-quote {
+        width: 680px;
+    }
+
+    /* second part (accordion)*/
+
+    .ac-panel {
+        max-width: 612px;
+    }
+
+    .panel-items {
+        padding-left: 728px;
+        padding-right: 43px;
+    }
+
+    .accordion-svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .about-me-margin {
+        margin-top: 64px;
+    }
+
+
+
+    /* third part (swiper) */
+    .about-me-swiper-container {
+        gap: 72px;
+        justify-content: flex-start;
+        margin-top: 96px;
+    }
+
+    .swiper-div {
+        width: 1200px;
+    }
+}
