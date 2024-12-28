@@ -1,7 +1,7 @@
 .footer-container {
   padding: 32px 16px;
   background: #1c1d20;
-    background-image: url(../img/work-together/glass-m.jpg);
+    background-image: url(/img/work-together/glass-m.jpg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
@@ -263,6 +263,26 @@
   gap: 4px;
 }
 
+
+.footer-contacts button {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  padding: 10px 12px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  background: none;
+}
+
+.footer-contacts button:hover,
+.footer-contacts button:active,
+.footer-contacts button:focus{
+  border: 1px solid #fafafa;
+}
+
+
 .footer-contacts a {
   font-family: "Inter Tight", sans-serif;
   font-weight: 500;
@@ -275,9 +295,18 @@
   background: none;
 }
 
+
 .footer-contacts a:active {
   border-color: #fafafa;
 }
+
+.footer-link:hover,
+.footer-link:active,
+.footer-link:focus{
+  border: 1px solid #fafafa;
+}
+
+
 
 .hidden {
   display: none;
@@ -286,7 +315,7 @@
 @media only screen and (min-width:768px) {
   .footer-container {
     padding: 80px 32px 169px 32px;
-    background-image: url(../img/work-together/glass-t.jpg);
+    background-image: url(/img/work-together/glass-t.jpg);
   }
 
   .footer-modal {
@@ -343,7 +372,10 @@
     padding: 18px 32px;
     font-size: 16px;
   }
-
+   .footer-contacts a{
+    padding: 18px 32px;
+    font-size: 16px;
+  }
   .footer-contacts {
     gap: 8px;
   }
@@ -352,7 +384,7 @@
 @media only screen and (min-width: 1440px) {
   .footer-container {
     padding: 80px 196px 169px 196px;
-    background-image: url(../img/work-together/glass-d.jpg);
+    background-image: url(/img/work-together/glass-d.jpg);
   }
 
   .footer-title-text {
