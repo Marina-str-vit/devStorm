@@ -11,10 +11,37 @@ const modalTitle = modal.querySelector(".footer-modal-h2");
 const modalMessage = modal.querySelector(".footer-modal-message");
 
 const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+const emailMessage = document.getElementById("email-message");
 
 function validateEmail(email) {
     return emailPattern.test(email);
 }
+
+function showValidationMessage(isValid) {
+    if (isValid) {
+        emailInput.classList.remove("error");
+        emailInput.classList.add("success");
+        emailMessage.textContent = "Success!";
+        emailMessage.classList.remove("error");
+        emailMessage.classList.add("success");
+    } else {
+        emailInput.classList.remove("success");
+        emailInput.classList.add("error");
+        emailMessage.textContent = "Invalid email, try again.";
+        emailMessage.classList.remove("success");
+        emailMessage.classList.add("error");
+    }
+}
+
+emailInput.addEventListener("input", () => {
+    const email = emailInput.value.trim();
+    if (email === "") {
+        emailMessage.textContent = ""; // Очищення, якщо поле порожнє
+        emailInput.classList.remove("error", "success");
+    } else {
+        showValidationMessage(validateEmail(email));
+    }
+});
 
 function showModal(title, message) {
     modalTitle.textContent = title;
@@ -29,8 +56,10 @@ sendButton.addEventListener('click', async (event) => {
     const comments = textInput.value.trim();
 
     if (!validateEmail(email)) {
-        alert('Please enter a valid email.');
+        showValidationMessage(false);
         return;
+    } else {
+        showValidationMessage(true);
     }
 
     const requestBody = {
@@ -49,11 +78,13 @@ sendButton.addEventListener('click', async (event) => {
                 'The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.'
             );
             form.reset();
+            emailMessage.textContent = ""; 
+            emailInput.classList.remove("success", "error");
         } else {
-            alert('An error occurred while submitting the form. Please try again.');
+            emailMessage.textContent = "An error occurred. Try again later.";
         }
     } catch (error) {
-        alert('Connection error. Check your internet connection.');
+        emailMessage.textContent = "Connection error. Check your internet connection.";
     }
 });
 
