@@ -295,7 +295,6 @@
   background: none;
 }
 
-
 .footer-contacts a:active {
   border-color: #fafafa;
 }
@@ -305,8 +304,6 @@
 .footer-link:focus{
   border: 1px solid #fafafa;
 }
-
-
 
 .hidden {
   display: none;
