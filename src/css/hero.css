@@ -12,18 +12,11 @@
 }
 
 
-.hero-container.container {
+.hero-container .container {
     display: flex;
     flex-direction: column;
     padding: 0;
 
-}
-
-.hero-box {
-    margin-top: 169px;
-    margin-left: 16px;
-    min-width: 250px;
-    min-height: 343px;
 }
 
 .hero-title {
@@ -33,26 +26,20 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #fafafa;
-
-
+    margin-top: 169px;
+    margin-left: 16px;
+    min-width: 250px;
+    min-height: 343px;
 }
 
-.hero-social-media {
+
+.hero-social-media-list {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 37px;
     margin-bottom: 32px;
     max-width: 100%;
-
-
-}
-
-.hero-social-media-list {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     gap: 4px;
 
 }
@@ -115,7 +102,8 @@
             url(/img/hero-img/hero-tab-1x.jpg);
     }
 
-    .hero-box {
+    .hero-title {
+        font-size: 90px;
         margin-top: 200px;
         margin-bottom: 187px;
         margin-left: 32px;
@@ -124,20 +112,12 @@
         min-height: 632px;
     }
 
-    .hero-title {
-        font-size: 90px;
-    }
-
-    .hero-social-media {
+    .hero-social-media-list {
         display: flex;
         justify-content: end;
         height: 55px;
-        margin-right: 32px;
-    }
-
-    .hero-social-media-list {
-        display: flex;
         gap: 10px;
+        
     }
 
     .hero-social-item {
@@ -175,7 +155,7 @@
 
         }
 
-        .hero-box {
+        .hero-title{
             margin-top: 188px;
             margin-bottom: 243px;
             margin-right: 32px;
@@ -185,15 +165,10 @@
 
         }
 
-        .hero-social-media {
+        .hero-social-media-list {
             display: flex;
             justify-content: end;
             margin-right: 0;
-        }
-
-        .hero-social-media-list {
-            display: flex;
-            justify-content: flex-end;
 
         }
 
