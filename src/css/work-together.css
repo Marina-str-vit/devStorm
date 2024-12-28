@@ -181,6 +181,11 @@
   gap: 16px;
 }
 
+.footer-input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-input {
   font-family: "Inter Tight", sans-serif;
   font-weight: 500;
@@ -214,6 +219,26 @@
 
 .footer-input:focus::placeholder {
   color: #fafafa;
+}
+
+.footer-input.error {
+  border-bottom: 1px solid #e74a3b;
+}
+
+.footer-input.success {
+  border-bottom: 1px solid #3cbc81;
+}
+
+.footer-message {
+  font-family: "Inter Tight", sans-serif;
+  font-size: 12px;
+  margin-top: 4px;
+  color: #e74a3b;
+  height: 16px;
+}
+
+.footer-message.success {
+  color: #3cbc81;
 }
 
 .footer-button {
