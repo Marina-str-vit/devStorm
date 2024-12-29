@@ -12,9 +12,11 @@ body {
   background-color: var(--background);
   font-family: 'Inter Tight', serif;
   font-weight: 500;
+  font-size: 16px;
   font-style: normal;
-  line-height: 1;
+  line-height: 1.5;
   color: #fafafa;
+  letter-spacing: -0.02em;
 }
 
 .visually-hidden {
@@ -28,4 +30,7 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+button {
+   cursor: pointer;
 }

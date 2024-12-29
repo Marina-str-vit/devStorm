@@ -37,6 +37,9 @@ export default defineConfig(({ command }) => {
       outDir: '../dist',
       emptyOutDir: true,
     },
+    optimizeDeps: {
+      include: ['swiper', 'axios'],
+    },
     plugins: [
       injectHTML(),
       FullReload(['./src/**/**.html']),

@@ -23,6 +23,7 @@
     "modern-normalize": "^3.0.1",
     "swiper": "^11.1.15",
     "vite-plugin-full-reload": "^1.2.0",
-    "vite-plugin-html-inject": "^1.1.2"
+    "vite-plugin-html-inject": "^1.1.2",
+    "vite-plugin-svg-sprite": "^0.5.2"
   }
 }
