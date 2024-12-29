@@ -1,54 +1,34 @@
-import Swiper from 'swiper/bundle';
+'use strict'
+
+import Swiper from 'swiper';
 import 'swiper/css';
-import sprite from '../img/sprite.svg';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
-const swiper = new Swiper('.projects-block-slider.swiper-container', {
-    slidesPerView: 1,
+const nextButton = document.querySelector(".projects-swiper-next-button");
+const prevButton = document.querySelector(".projects-swiper-prev-button");
+
+
+const swiper = new Swiper('.swiper-projects-container', {
+    modules: [Navigation,Keyboard, Mousewheel], 
     navigation: {
-        nextEl: '.projects-button-slider-next.swiper-button-next',
-        prevEl: '.projects-button-slider-prev.swiper-button-prev',
-    },
+      nextEl: nextButton,
+      prevEl: prevButton,
+    }, 
+    spaceBetween: 100,
+    slidesPerView: 1, 
+    speed: 800,
     keyboard: {
-        enabled: true,
-        onlyInViewport: true,
+      enabled: true, 
+      onlyInViewport: true, 
     },
-    on: {
-        reachEnd: function () {
-            // const nextIcon = document.querySelector('.projects-button-slider-next.swiper-button-next svg use');
-            // nextIcon.setAttribute('href', `${sprite}#arrow-right`);
-            const nextButton = document.querySelector('.projects-button-slider-next');
-            nextButton.style.borderColor = 'grey';
-        },
-        reachBeginning: function () {
-            // const prevIcon = document.querySelector('.projects-button-slider-prev .swiper-button-prev svg use');
-            // prevIcon.setAttribute('href', `${sprite}#arrow-right`);
-            const prevButton = document.querySelector('.projects-button-slider-prev');
-            prevButton.style.borderColor = 'grey';
-        },
-        slideChange: function() {
-            if (!swiper.isBeginning && !swiper.isEnd) {
-                // const nextIcon = document.querySelector('.projects-button-slider-next.swiper-button-next svg use');
-                // const prevIcon = document.querySelector('.projects-button-slider-prev.swiper-button-prev svg use');
-                // nextIcon.setAttribute('href', `${sprite}#arrow-right`);
-                // prevIcon.setAttribute('href', `${sprite}#arrow-right`);
-                
-                const prevButton = document.querySelector('.projects-button-slider-prev');
-                const nextButton = document.querySelector('.projects-button-slider-next');
-                prevButton.style.borderColor = 'white';
-                nextButton.style.borderColor = 'white';
-            }
-        }
-    }
-});
+    mousewheel: {
+        forceToAxis: true, 
+    },
+    touchEventsTarget: 'wrapper', 
+    createElements: true,
+  });
 
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'Tab') {
-        event.preventDefault();
-        if (event.shiftKey) {
-            swiper.slidePrev();
-        } else {
-            swiper.slideNext();
-        }
-    }
-});
+
+
+
 
