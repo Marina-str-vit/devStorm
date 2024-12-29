@@ -1,7 +1,13 @@
-.menu-header {
+.header {
+    padding-top: 32px;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+}
+.menu-header.container {
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    /* position: absolute; */
     max-width: 1376px;
     width: 100%;
     height: 80px;
