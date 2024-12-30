@@ -9,7 +9,7 @@ const prevButton = document.querySelector(".projects-swiper-prev-button");
 
 
 const swiper = new Swiper('.swiper-projects-container', {
-    modules: [Navigation,Keyboard, Mousewheel], 
+    modules: [Navigation, Keyboard, Mousewheel], 
     navigation: {
       nextEl: nextButton,
       prevEl: prevButton,
