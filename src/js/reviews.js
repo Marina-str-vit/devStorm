@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         onlyInViewport: true,
       },
       mousewheel: {
-        releaseOnEdges: false, // Забороняє прокрутку за межі першого або останнього слайда
+        releaseOnEdges: false, 
       },
       touchRatio: 1,
       loop: false,
